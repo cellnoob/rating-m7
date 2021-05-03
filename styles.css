@@ -1,0 +1,120 @@
+/*form {
+    border: 1px solid black;
+    margin-right: 500px;
+}*/
+
+.rating {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+/*
+.flex-start {
+    justify-content: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+*/
+/*.flex-end li {
+background: gold;
+}*/
+
+.center {
+    justify-content: center;
+}
+
+/*.center li {
+background: deepskyblue;
+}*/
+/*
+.space-between {
+    justify-content: space-between;
+    
+}
+*/
+/*.space-between li {
+background: lightgreen;
+}*/
+/*
+.space-around {
+    justify-content: space-around;
+}
+*/
+/*.space-around li {
+background: hotpink; 
+}*/
+/*
+.space-evenly {
+    justify-content: space-evenly;
+}
+*/
+/*.space-evenly li {
+background: #bada55; 
+}*/
+
+.rating-items {
+    
+    /*background: tomato;*/
+    padding: 10px;
+    width: 30px;
+    height: 50px;
+    margin: 5px;
+    line-height: 50px;
+    /*background: green;*/
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(245, 11, 140);
+    font-size: 3em;
+    
+}
+
+.rating-items::before {
+    content: "\2605";
+}
+
+.rating-items.active ~ .rating-items::before{
+    content: "\2606";
+}
+
+.rating:hover .rating-items::before{
+    content: "\2605";
+}
+
+.rating-items:hover ~ .rating-items::before{
+    content: "\2606";
+}
+
+
+
+.no-active{
+    content: "\2605";
+}
+
+
+
+.datosPorPantalla {
+    text-align: center;
+}
+
+body{
+    background: linear-gradient(to bottom, #a76cd1, #aa8f9a);
+    height: 100vh;
+    font-family: 'Ubuntu Mono', monospace; 
+}
+
+
+
+
+
+
+  html, body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
